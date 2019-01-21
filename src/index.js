@@ -1,8 +1,13 @@
 import './utills/resize'
 import './style.css'
+if(module.hot){
+    module.hot.accept()
+}
+
 async function test(){
     console.log(1)
-    await test1(3000)
+    let test = await test1(5000)
+    console.log(test)
 }
 function test1 (second){
     return new Promise((resolve, reject) => {
@@ -12,6 +17,3 @@ function test1 (second){
     })
 }
 test()
-if(module.hot){
-    module.hot.accept()
-}
