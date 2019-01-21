@@ -3,9 +3,8 @@ import './style.css'
 if(module.hot){
     module.hot.accept()
 }
-
 async function test(){
-    console.log(1)
+    console.log(8)
     let test = await test1(5000)
     console.log(test)
 }
