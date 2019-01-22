@@ -4,7 +4,7 @@ if(module.hot){
     module.hot.accept()
 }
 async function test(){
-    console.log(8)
+    console.log(5)
     let test = await test1(5000)
     console.log(test)
 }
